@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    letter-spacing: 1px;
+    font-family: 'Acme', sans-serif;
+}
+
+*:focus {
+    outline: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #4166ca;
+}
+
+.App {
+    min-height: 100vh;
+    min-width: 400px;
+    box-shadow: 0 0 30px #8bc4e6;
+    padding: 10px ;
+    border-radius: 50px;
+    background-color: #2e41ebd0;
+}
+
+.header {
+    text-align: center;
+    margin: 10px auto;
+}
+
+.balance {
+    margin-top: 10px;
+}
+
+.incomeExpense {
+    display: flex;
+    box-shadow: 0 0 10px #58b8f0;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 20px 20px;
+}
+
+.incomeExpense > div {
+    flex: 1;
+    text-align: center;
+}
+
+.money {
+    font-size: 22px;
+}
+
+.plus {
+    color: #00c700;
+}
+
+.minus {
+    color: #ac0000;
+}
+.incomeExpense > div:first-of-type {
+    border-right: 2px solid #95d4f1;
+}
+
+.container {
+    padding: 10px;
+}
+
+.history {
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.history ul {
+    text-align: center;
+}
+
+.history ul li {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.history ul li span {
+    color: #0256f3;
+    padding: 0 5px;
+}
+
+.dlt-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    margin-right: 0;
+    background-color: #ac0000;
+    border: 1px solid #ac0000;
+    display: none;
+}
+
+.history ul li:hover .dlt-btn {
+    display: inline-block;
+}
+
+
+
+.addTrans label {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+input[type='text'],
+input[type='number'] {
+  border: 1px solid #0256f3;
+  border-radius: 5px;
+  display: block;
+  font-size: 20px;
+  width: 100%;
+  height: 40px;
+  padding: 0 5px;
+  color: #0256f3;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    margin: 20px 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.btnIncome {
+    background-color: #00c700;
+    border: 1px solid #00c700;
+}
+
+.btnExpense {
+    background-color: #ac0000;
+    border: 1px solid #ac0000;
+}
+
+
+@media only screen and (max-width: 390px) {
+    .App {
+        min-width: 320px;
+    }
+}
